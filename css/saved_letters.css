@@ -12,14 +12,15 @@
   --background_l: white;
   --border_p_s: 0.01em solid var(--primary_ll);
   --border_p_m: 0.1em solid var(--primary_ll);
-  --border_d:0.01em solid var(--primary_d);
-  --border_l:0.01em solid var(--background_p);
+  --border_d: 0.01em solid var(--primary_d);
+  --border_l: 0.01em solid var(--background_p);
 
 }
- .UI_copy {
-  font-family: 'Varela Round', sans-serif ;
-color: var(--text_d);
- }
+
+.UI_copy {
+  font-family: 'Varela Round', sans-serif;
+  color: var(--text_d);
+}
 
 .primary_color {
   color: var(--primary)
@@ -77,17 +78,19 @@ color: var(--text_d);
 }
 
 .breadcrumb {
- 
+
   margin-left: 0.4em;
 }
-.breadcrumb a{
-  color:#9E9494;
+
+.breadcrumb a {
+  color: #9E9494;
 }
 
 .breadcrumb_no_click {
   text-decoration: none;
   cursor: context-menu;
 }
+
 .breadcrumb a:hover {
   color: var(--primary);
 }
@@ -133,6 +136,7 @@ body {
 .primary_text {
   color: var(--primary);
 }
+
 /**buttons**/
 nav_cta {
   color: var(--text_d);
@@ -140,7 +144,7 @@ nav_cta {
   width: 160px;
   height: 40px;
   font-size: 18px;
-  font-weight: 500; 
+  font-weight: 500;
 }
 
 
@@ -228,7 +232,7 @@ nav_cta {
   border: var(--border_p_m);
   letter-spacing: 0.06rem;
   font-size: .7rem;
-  
+
   margin: 4px 2px;
   padding: 4px 1em;
 }
@@ -237,6 +241,7 @@ nav_cta {
   border: 1px solid var(--primary_l);
   background-color: var(--primary_l);
 }
+
 .category_selected {
   border: var(--border_d);
   color: var(--primary_d) !important;
@@ -410,7 +415,7 @@ i+span {
 .reading_list .form-control {
   color: var(--text_d);
   background-color: var(--background_l);
-   border: 0.1em solid var(--primary_ll);
+  border: 0.1em solid var(--primary_ll);
   font-family: 'Varela Round', sans-serif;
 }
 
@@ -428,7 +433,7 @@ i+span {
 .reading_list li {
   white-space: nowrap;
   overflow: hidden;
-  text-overflow:clip;
+  text-overflow: clip;
   border: 0.1em solid var(--primary_ll);
   font-family: 'Varela Round', sans-serif;
   font-size: 1rem;
@@ -439,7 +444,7 @@ i+span {
 
 .reading_list li:hover {
   border: 1px solid var(--primary_l);
-    background-color: var(--primary_l);
+  background-color: var(--primary_l);
 }
 
 .reading_list h2 {
@@ -473,7 +478,8 @@ i+span {
   color: var(--primary);
   border: none;
 }
- td .btn-light {
+
+td .btn-light {
   display: none;
   background-color: transparent;
 
@@ -482,34 +488,36 @@ i+span {
 }
 
 .card .btn-light:hover {
-background-color: var(--primary_ll);
+  background-color: var(--primary_ll);
   color: #cc9000;
 
 }
 
 
-  
+
 
 
 
 /**write a letter**/
 
-.form-control, .form-select {
+.form-control,
+.form-select {
   border: var(--border_l) !important;
-  }
-  .border_p{
-    border: var(--border_p_s) !important;
-    }
-  
+}
+
+.border_p {
+  border: var(--border_p_s) !important;
+}
+
 .form-control:focus {
-  
+
   border-color: transparent !important;
   outline: 0.3em solid var(--primary_ll) !important;
-  }
+}
 
 
 .form-select:focus {
-  
+
   border-color: transparent !important;
   outline: 0.3em solid var(--primary_ll) !important;
 }
@@ -526,25 +534,30 @@ background-color: var(--primary_ll);
 
 
 #letter_field {
-height: 50%px;
-width:100%;
+  height: 50%px;
+  width: 100%;
 }
 
-.write_cta, .browse_cta {
+.write_cta,
+.browse_cta {
   background-color: var(--primary);
   border-color: var(--primary);
 }
+
 .write_cta:hover {
   background-color: var(--primary_l);
   border-color: var(--primary_l);
 }
+
 .browse_cta:hover {
   background-color: var(--primary_l);
   border-color: var(--primary_l);
 }
+
 .write_secondary {
   border: var(--border_p_m);
 }
+
 .write_secondary:hover {
   background-color: var(--primary_ll);
 }
@@ -612,5 +625,3 @@ th {
 
 }
 **/
-
-

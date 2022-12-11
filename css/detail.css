@@ -1,4 +1,3 @@
-
 .card_small .custom-card-title {
     font-family: 'Varela Round', sans-serif;
     /* position: absolute; */
@@ -7,19 +6,20 @@
     width: 90%;
     font-weight: 400;
     font-size: 18px;
-  }
-  .custom-card h5 {
+}
+
+.custom-card h5 {
     /**this truncates the text after 4 lines, change in the line clamp property**/
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     width: 100%;
     overflow: hidden;
-  
-  }
-  
-  
-  .custom-card p {
+
+}
+
+
+.custom-card p {
     /**this truncates the text after 4 lines, change in the line clamp property**/
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -29,36 +29,72 @@
     margin-bottom: 0.5em;
     font-size: 15px;
     line-height: 120%;
-  }
-  .card_small .category_chip {
+}
+
+.card_small .category_chip {
     position: absolute;
     top: 1px;
     left: 0.4px;
-  
+
     color: var(--primary_d);
     background-color: var(--background_p);
     border-radius: 4px 0px 4px 0;
     padding: 2px 1em;
-  
+
     width: fit-content;
     height: 2.4em;
     line-height: 2em;
     text-align: center;
-  
+
     text-transform: uppercase;
     letter-spacing: 0.06rem;
     font-size: 0.6rem;
-  
-  }
-  
-  .card-text-detail {
+
+}
+
+.card-text-detail {
     font-size: 12px;
     font-family: 'Noto Serif', Sans Serif;
-  }
-  .custom-card img {
+}
+
+.custom-card img {
     width: 100%;
     height: 100px;
     object-fit: cover;
     filter: brightness(.4);
-  
-  }
+
+}
+
+.breadcrumb {
+
+    margin-left: 0.4em;
+}
+
+.breadcrumb a {
+    color: #9E9494;
+}
+
+.breadcrumb_no_click {
+    text-decoration: none;
+    cursor: context-menu;
+}
+
+.breadcrumb a:hover {
+    color: var(--primary);
+}
+
+.write_cta,
+.browse_cta {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.write_cta:hover {
+  background-color: var(--primary_l);
+  border-color: var(--primary_l);
+}
+
+.browse_cta:hover {
+  background-color: var(--primary_l);
+  border-color: var(--primary_l);
+}
