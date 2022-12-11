@@ -99,12 +99,13 @@ textarea {
   color: var(--text_d);
 }
 
-.hcards {
+/* .hcards {
   height: 200px;
-}
+} */
 
 .hcard-image {
   height: 197px;
+  width: 100%;
 }
 
 .footer {

@@ -25,6 +25,18 @@
                 background-color: white;
             }
         }
+
+        @media only screen and (max-width: 420px) {
+            .banner-image {
+                width: 95%;
+                top: 100px;
+                position: absolute;
+            }
+            .banner-h3 {
+                left: 25px!important;
+                top: 230px!important;
+            }
+        }
     </style>
 </head>
 
@@ -104,8 +116,8 @@
 
         </div>
         <div class="banner-text">
-            <img src="images/enveep-logo.png" />
-            <h3>Write Letters to anyone you want and start expressing yourself!</h3>
+            <img class="banner-image" src="images/enveep-logo.png" />
+            <h3 class="banner-h3">Write Letters to anyone you want and start expressing yourself!</h3>
         </div>
     </div>
 
@@ -264,7 +276,7 @@
         <div class="mb-4">
             <h2>Politics <span class="badge bg-warning new-badge fs-6">34 new</span></h2>
             <div class="row">
-                <div class="col-md-1"></div>
+                <div class="col-lg-1 col-md-0"></div>
                 <div class="col-md-8">
                     <div class="container mt-3">
                         <div>
@@ -570,7 +582,7 @@
         </div>
     </main>
 
-    <div class="footer">
+    <div class="footer mt-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 mt-3">
