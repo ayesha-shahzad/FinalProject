@@ -1,0 +1,329 @@
+.primary_color {
+    background-color: #ffb400 !important;
+}
+
+
+
+h2 {
+    font-size: 1.5rem;
+    font-family: "Varela+Round";
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+html {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    color: rgb(145, 108, 14);
+    margin-bottom: 2em;
+    font-family: 'Noto Serif', serif;
+
+}
+
+
+a {
+    color: black;
+}
+
+
+
+.sidenav i {
+    font-size: 1.5rem;
+}
+
+/**for bootstrap card**/
+.bs_image_card {
+    object-fit: cover;
+}
+
+/**Start of css of the letter card**/
+
+/** THe image takes 30% of the card, the content - the rest**/
+/** ?? How to stop the card from growing vertically when resized? Loooks like grids will do so? Change display-grid?**/
+/** The letter teaser container: cut the line of the text; the text doesn't truncate**/
+.reading_list {
+    /** transform: translateY(50%);**/
+    position: fixed;
+    width: fit-content;
+    s height: fit-content;
+    background-color: rgb(226, 232, 108, 0.3);
+    padding: 1em;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.sidenav {
+    width: 16%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0em;
+    overflow-x: hidden;
+    padding: 8px 0;
+   
+}
+
+.sidenav a {
+
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family:"Noto", sans-serif;
+
+}
+
+.sidenav a:hover {
+    color: #064579;
+    font-size: 1.1rem;
+    background-color: yellow;
+}
+
+
+.card_wrapper {
+    /**self**/
+    display: flex;
+    width: 100%;
+
+    background-color: white;
+    height: 240px;
+    margin: 8px 0;
+    border-radius: ;
+
+}
+
+/**.card_wrapper {
+    display: grid;
+    grid-template-columns: 30% auto;
+    gap:1em;
+    flex-direction: row;
+    background-color: rgb(207, 223, 237);
+    width: 90%;
+}**/
+
+.card_image_container {
+    /** grid-column: 1 / 2;**/
+
+    /**background-color: red;**/
+    width: 240px;
+    height: 240px;
+    flex-shrink: 0;
+}
+
+.card_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_content_wrapper {
+    /**as child**/
+    /**grid-column: 2 / 2;**/
+    padding: 16px;
+    /**background-color: rgb(68, 68, 19);**/
+
+    /**as parent**/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+.bookmark_wrapper {
+    width: 100%;
+    height: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.5em;
+    /**background-color: brown;**/
+}
+
+material-icons {
+    font-size: 1rem;
+    margin: 4px;
+}
+
+
+.write_details_wrapper {
+    box-sizing: border-box;
+    /**background-color: yellowgreen;**/
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 0.5em 0.25em;
+    vertical-align: middle;
+    gap: 1em;
+}
+
+/**so that these details don't wrap whehn resized**/
+.to_date_by {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1em;
+}
+
+.to {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+
+    /**  margin-right: 0.5em; background-color: blanchedalmond;**/
+}
+
+.to::before {
+    content: "to";
+    text-transform: lowercase;
+    font-weight: lighter;
+}
+
+.date {
+    display: inline-block;
+
+    /**margin: 0 0.5em; background-color: blanchedalmond;**/
+}
+
+.by {
+    text-transform: capitalize;
+    display: inline-block;
+
+    /** margin: 0 0.5em;background-color: blanchedalmond;  **/
+}
+
+.by::before {
+    content: "by";
+    text-transform: lowercase;
+}
+
+.category_chip {
+    display: inline-block;
+    background-color: rgb(236, 238, 211);
+    width: fit-content;
+    border-radius: 2em;
+    padding: 4px 1em;
+    margin: 4px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    font-size: 0.8rem;
+}
+
+.category_chip_L {
+    display: inline-block;
+    background-color: rgb(246, 246, 231);
+    width: fit-content;
+    border-radius: 2em;
+    padding: 4px 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.09rem;
+    font-size: 0.9rem
+}
+
+.chips_right_wrapper {
+
+    gap: 1em;
+}
+
+.letter_title {
+    line-height: 4px;
+    margin: 12px 0;
+}
+
+
+.letter_teaser {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 4rem;
+    font-family: Noto+Serif;
+
+}
+
+.read_details_wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5em 0.25em;
+    margin-right: 5px;
+    /**background-color: blueviolet;**/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.read_time {
+    display: inline-block;
+    text-transform: lowercase;
+}
+
+.reactions {
+    display: inline-block;
+    /**background-color: blueviolet;**/
+    margin-left: 1.5em;
+}
+
+/**End of css of the letter card**/
+
+
+
+
+/**start of the css of the letter container**/
+article {
+    /**self**/
+    width: 80%;
+    height: 100vh;
+
+    /**margin-left:240px;**/
+    /**background-color: blue;**/
+
+    /**as parent**/
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: nowrap;
+    align-content: flex-start;
+}
+
+.reading_list_card {
+    width: 100%;
+    height: 3em;
+    border: 1px solid grey;
+    background-color: rgb(233, 243, 144);
+    border-radius: 4px;
+    margin: 16px 0;
+    padding: 4px 8px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    font-family:"Noto", sans-serif;}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: lightblue;
+        .letter_teaser: {
+
+        }
+    }
+
+}

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/topnavbar.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar  navbar-expand-lg primary_color fixed-top d-flex justify-content-center">
+            <div class=" container-fluid ">
+                <a class=" navbar-brand" href="index.html">Enveep</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <div>
+                            <a class="btn btn-outline nav_cta bg-white mx-sm-0 mx-md-2 " href="write-letter.html">Write
+                                a
+                                letter</a>
+                        </div>
+
+
+                        <li class="nav-item  dropdown primary_color_d">
+                            <a class="nav-link UI_copy dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu primary_color">
+                                <li><a class="dropdown-item" href="#">Entertainment</a></li>
+                                <li><a class="dropdown-item" href="#">Politics</a></li>
+                                <li><a class="dropdown-item" href="#">Sports</a></li>
+                                <li><a class="dropdown-item" href="#">Europe</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Trending</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link UI_copy dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                My letters
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="saved-letters.html">Saved</a></li>
+                                <li><a class="dropdown-item" href="#">Published</a></li>
+                                <li><a class="dropdown-item" href="#">Drafts</a></li>
+                                <li><a class="dropdown-item" href="#">My lists</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link UI_copy dropdown-toggle text-dark" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ayesha 22
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Account</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                    <form role="search">
+                        <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid  pt-5 mt-1">
+        <nav style="--bs-breadcrumb-divider: ' >';" aria-label="breadcrumb">
+            <ol class="breadcrumb mt-4 mb-4">
+                <li class="breadcrumb-item "><a href="#">Home</a></li>
+                <li class="breadcrumb-item " aria-current="page">Write a letter</li>
+
+            </ol>
+        </nav>
+    </div>
+
+    <main class="mainpage">
+        <div class="container text-left">
+            <div class="row">
+                <div class="col-lg-9 col-md-12">
+                    <div class="d-flex flex-row mb-3">
+                        <div class="me-3">
+                            <img src="images/universe.jpg" class="img-thumbnail mainimage" alt="...">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="mt-3">
+                                <span class="authorName">
+                                    <h5>Ayesha Shahzad</h5>
+                                </span>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <div class="p-2 ps-0">04.12.22</div>
+                                <div class="p-2">5 min read</div>
+                                <div class="p-2">likes</div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row emptyDiv">
+                            &nbsp;
+                        </div>
+                        <div class="d-flex flex-row">
+                            <div class="pt-6">
+                                <button type="button" class="btn btn-primary write_cta">Follow</button>
+                                <button type="button" class="btn btn-primary write_cta">Message</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h1>An Open Letter to Nasa...</h1>
+                    </div>
+                    <div class="text-center">
+                        <img src="images/universe.jpg" class="img-thumbnail contentImage" alt="...">
+                    </div>
+                    <div class="mt-3">
+                        <p>What is Lorem Ipsum?</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including versions
+                            of
+                            Lorem Ipsum.</p>
+
+                        <p>Why do we use it?</p>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                            normal
+                            distribution of letters, as opposed to using 'Content here, content here', making it look
+                            like
+                            readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
+                            as
+                            their default model text, and a search for 'lorem ipsum' will uncover many web sites still
+                            in
+                            their infancy. Various versions have evolved over the years, sometimes by accident,
+                            sometimes on
+                            purpose (injected humour and the like).</p>
+
+
+                        <p>Where does it come from?</p>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                            Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
+                            Latin
+                            words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
+                            classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections
+                            1.10.32
+                            and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
+                            written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
+                            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a
+                            line in
+                            section 1.10.32.</p>
+
+                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+                            interested.
+                            Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
+                            reproduced
+                            in their exact original form, accompanied by English versions from the 1914 translation by
+                            H.
+                            Rackham.</p>
+                    </div>
+                    <div>
+                        <h4>Comments</h4>
+                        <div class="form-floating col-lg-9 col-md-12">
+                            <form action="/html/tags/html_form_tag_action.cfm" method="post">
+                                <div>
+                                    <textarea class="form-control" placeholder="Leave a comment here"
+                                        id="floatingTextarea"></textarea>
+                                    <!-- <label for="floatingTextarea">Comments</label> -->
+                                </div>
+                                <div class="mt-2">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="d-flex flex-row mt-3">
+                            <div class="me-3">
+                                <img src="images/universe.jpg" class="img-thumbnail commentImage" alt="...">
+                            </div>
+                            <div class="d-flex flex-column col-8">
+                                <div class="d-flex flex-row">
+                                    <span>
+                                        <h6>Ayesha Shahzad</h6>
+                                    </span>
+                                    <div class="ps-3">04.12.22</div>
+                                </div>
+                                <div>
+                                    When I was a teenager I read a lot of sci-fi. I enjoyed the stories about colonizing
+                                    the Moon, or Mars, or even Venus (back when we thought it might be habitable). But
+                                    I'm older now and when I look at the pictures of rover tracks on the Moon or Mars I
+                                    just feel a bit of sadness that humans have gone and messed up another pristine
+                                    place.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div>
+                        <div>
+                            <h2>Popular Letters</h2>
+                        </div>
+                        <div>
+                            <div class="col pb-3">
+                                <div class="card custom-card pb-2 card_small">
+                                    <!--image-->
+                                    <img src="images/universe.jpg" class="card-img-top ">
+                                    <div class="card_img_overlay">
+                                        <i class="material-icons ">bookmark</i>
+                                    </div>
+
+                                    <!--body-->
+                                    <div class="card-body d-flex flex-column justify-content-between pt-6 ">
+                                        <!--write details-->
+
+                                        <!--card title on top of the image via absolute position in css-->
+                                        <h5 class="card-title custom-card-title">Stop self-prescribing antibiotics!Stop
+                                            self-prescribing antibiotics! Stop self-prescribing antibiotics!</h5>
+
+                                        <!--card text -->
+                                        <p class="card-text-detail mt-6">An antibiotic is a type of antimicrobial
+                                            substance active against bacteria.
+                                            It is the most important type of antibacterial agent for bacterial
+                                            infections, and antibiotic medications are widely used in the treatment and
+                                            prevention of such infections. They may either kill or inhibit the growth of
+                                            bacteria. </p>
+
+                                        <!--category chip above via absolute position in css-->
+                                        <div class="category_chip">Health</div>
+
+                                    </div>
+                                    <!--end of card body-->
+                                </div>
+                            </div>
+                            <div class="col pb-3">
+                                <div class="card custom-card pb-2 card_small">
+                                    <!--image-->
+                                    <img src="images/universe.jpg" class="card-img-top ">
+                                    <div class="card_img_overlay">
+                                        <i class="material-icons ">bookmark</i>
+                                    </div>
+
+                                    <!--body-->
+                                    <div class="card-body d-flex flex-column justify-content-between pt-6 ">
+                                        <!--write details-->
+
+                                        <!--card title on top of the image via absolute position in css-->
+                                        <h5 class="card-title custom-card-title">Stop self-prescribing antibiotics!Stop
+                                            self-prescribing antibiotics! Stop self-prescribing antibiotics!</h5>
+
+                                        <!--card text -->
+                                        <p class="card-text-detail mt-6">An antibiotic is a type of antimicrobial
+                                            substance active against bacteria.
+                                            It is the most important type of antibacterial agent for bacterial
+                                            infections, and antibiotic medications are widely used in the treatment and
+                                            prevention of such infections. They may either kill or inhibit the growth of
+                                            bacteria. </p>
+
+                                        <!--category chip above via absolute position in css-->
+                                        <div class="category_chip">Health</div>
+
+                                    </div>
+                                    <!--end of card body-->
+                                </div>
+                            </div>
+                            <div class="col pb-3">
+                                <div class="card custom-card pb-2 card_small">
+                                    <!--image-->
+                                    <img src="images/universe.jpg" class="card-img-top ">
+                                    <div class="card_img_overlay">
+                                        <i class="material-icons ">bookmark</i>
+                                    </div>
+
+                                    <!--body-->
+                                    <div class="card-body d-flex flex-column justify-content-between pt-6 ">
+                                        <!--write details-->
+
+                                        <!--card title on top of the image via absolute position in css-->
+                                        <h5 class="card-title custom-card-title">Stop self-prescribing antibiotics!Stop
+                                            self-prescribing antibiotics! Stop self-prescribing antibiotics!</h5>
+
+                                        <!--card text -->
+                                        <p class="card-text-detail mt-6">An antibiotic is a type of antimicrobial
+                                            substance active against bacteria.
+                                            It is the most important type of antibacterial agent for bacterial
+                                            infections, and antibiotic medications are widely used in the treatment and
+                                            prevention of such infections. They may either kill or inhibit the growth of
+                                            bacteria. </p>
+
+                                        <!--category chip above via absolute position in css-->
+                                        <div class="category_chip">Health</div>
+
+                                    </div>
+                                    <!--end of card body-->
+                                </div>
+                            </div>
+                            <!-- <div>
+                                <img src="images/universe.jpg" class="img-thumbnail contentImage" alt="...">
+                                <h6>An Open Letter to Nasa...</h6>
+                            </div>
+                            <div>
+                                <img src="images/universe.jpg" class="img-thumbnail contentImage" alt="...">
+                                <h6>An Open Letter to Nasa...</h6>
+                            </div>
+                            <div>
+                                <img src="images/universe.jpg" class="img-thumbnail contentImage" alt="...">
+                                <h6>An Open Letter to Nasa...</h6>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h2>Related Letters</h2>
+                        </div>
+                        <div>
+                            <div class="d-flex flex-row mb-3 related-letter-card">
+                                <img src="images/universe.jpg" class="p-1 relatedImage" alt="...">
+                                <div class="ms-2">
+                                    <h6>An Open Letter to Nasa by Ayesha Shahzad</h6>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 related-letter-card">
+                                <img src="images/universe.jpg" class="p-1 relatedImage" alt="...">
+                                <div class="ms-2">
+                                    <h6>An Open Letter to Nasa by Ayesha Shahzad</h6>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 related-letter-card">
+                                <img src="images/universe.jpg" class="p-1 relatedImage" alt="...">
+                                <div class="ms-2">
+                                    <h6>An Open Letter to Nasa by Ayesha Shahzad</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h2>Popular Categories</h2>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-light category">politics</button>
+                            <button type="button" class="btn btn-light category">education</button>
+                            <button type="button" class="btn btn-light category">world news</button>
+                            <button type="button" class="btn btn-light category">society</button>
+                            <button type="button" class="btn btn-light category">environment</button>
+                            <button type="button" class="btn btn-light category">business</button>
+                            <button type="button" class="btn btn-light category">art</button>
+                            <button type="button" class="btn btn-light category">books</button>
+                            <button type="button" class="btn btn-light category">culture</button>
+                            <button type="button" class="btn btn-light category">entertainment</button>
+                            <button type="button" class="btn btn-light category">technology</button>
+                            <button type="button" class="btn btn-light category">life</button>
+                            <button type="button" class="btn btn-light category">media</button>
+                            <button type="button" class="btn btn-light category">sport</button>
+                            <button type="button" class="btn btn-light category">travel</button>
+                            <button type="button" class="btn btn-light category">family</button>
+                            <button type="button" class="btn btn-light category">health</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="footer mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mt-3">
+                    <h2>Enveep</h2>
+                    <p>Express Yourself!</p>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <h4>About Us</h4>
+                    <p>Contact Us</p>
+                    <p>Terms and Conditions</p>
+                    <p>Privacy Policy</p>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <h4>Contact Us</h4>
+                    <p>Social Media</p>
+                    <p>Blogs</p>
+
+                </div>
+                <div class="col-md-3 mt-3">
+                    <h4>Resources</h4>
+                    <p>FAQs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

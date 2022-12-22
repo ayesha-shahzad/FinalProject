@@ -24,26 +24,28 @@ body {
   height: 100px;
   width: 100px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .commentImage {
   height: 60px;
   width: 60px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .contentImage {
   border-radius: 2%;
 }
 
-.authorName {
-  height: 100px;
-  padding-top: 30px;
+.copyright {
+  font-family: var(--bs-body-font-family) !important;
 }
 
 .relatedImage {
   height: 48px;
   width: 48px;
+  object-fit: cover;
 }
 
 .emptyDiv {
@@ -95,7 +97,7 @@ textarea {
 .banner-text h3 {
   position: absolute;
   top: 260px;
-  left: 58px;
+  left: 48px;
   color: var(--text_d);
 }
 
@@ -106,10 +108,30 @@ textarea {
 .hcard-image {
   height: 197px;
   width: 100%;
+  object-fit: cover;
 }
 
 .footer {
+  background-color: var(--primary_ll);
+}
+
+.copyright-footer {
   background-color: var(--primary);
+}
+
+.social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: var(--primary_ll);
+  color: var(--text_d) !important;
+  line-height: 1;
+  padding: 9px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
 }
 
 .popular-categories button {
@@ -124,21 +146,12 @@ textarea {
 .custom-card-title {
   font-family: 'Varela Round', sans-serif;
   /* position: absolute; */
-  top: 12%;
-  color: var(--primary_d);
-  width: 90%;
-  font-weight: 400;
-  font-size: 20px;
-}
-
-.custom-card-title {
-  font-family: 'Varela Round', sans-serif;
-  /* position: absolute; */
   top: 16%;
-  color: var(--primary_d);
+  color: var(--primary_d) !important;
   width: 90%;
   font-weight: 400;
   font-size: 18px;
+  text-decoration: none;
 }
 
 .custom-card p {
@@ -236,11 +249,11 @@ i+span {
 
 
 .category {
-  color: var(--primary_d);
+  
   background-color: var(--background_l);
   width: fit-content;
   text-transform: uppercase;
-  border: var(--border_p_m);
+  border: var(--border_p_m) !important;
   letter-spacing: 0.06rem;
   font-size: .7rem;
   
@@ -250,9 +263,26 @@ i+span {
 
 .category:hover {
   border: 1px solid var(--primary_l);
-  background-color: var(--primary_l);
+  background-color: var(--primary_ll);
 }
 .category_selected {
   border: var(--border_d);
   color: var(--primary_d) !important;
+}
+
+.see-all-div {
+  text-align: right;
+}
+
+.see-all {
+  font-family: 'Varela Round', sans-serif;
+  color: var(--text_d);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20%;
+  background-color: var(--primary_ll);
+}
+
+.see-all:hover {
+  color: var(--background_l);
 }

@@ -1,7 +1,6 @@
 :root {
   /**root color styles**/
   --primary: #ffb400;
-
   --primary_l: #ffc333;
   --primary_d: #cc9000;
   --primary_ll: #ffe9b3;
@@ -14,7 +13,6 @@
   --border_p_m: 0.1em solid var(--primary_ll);
   --border_d: 0.01em solid var(--primary_d);
   --border_l: 0.01em solid var(--background_p);
-
 }
 
 .UI_copy {
@@ -56,13 +54,15 @@
   text-decoration: none;
   font-size: 1rem;
   display: block;
-  padding: 8px 8px;
+  padding: 0.5em 1em;
   font-size: 1rem;
   color: var(--text_d);
   letter-spacing: 0.5px;
   font-family: 'Varela Round', sans-serif;
-  border-radius: 0 4px 4px 0;
+  border-radius: 4px;
   transform: uppercase;
+  border: var(--border_p_s);
+  background-color: var(--background_l);
 
 
 }
@@ -73,8 +73,7 @@
 
 .sidenav a:hover {
   box-shadow: 2 px 4 px 10px 4px var(--text_d);
-  color: var(--primary);
-  /**background-color: var(--primary_ll);**/
+  background-color: var(--primary_ll);
 }
 
 .breadcrumb {
@@ -92,7 +91,7 @@
 }
 
 .breadcrumb a:hover {
-  color: var(--primary);
+  color: var(--primary_d);
 }
 
 .card h1,
@@ -148,6 +147,7 @@ nav_cta {
 }
 
 
+
 /**page layout**/
 
 
@@ -175,6 +175,9 @@ nav_cta {
   object-fit: cover;
   filter: brightness(.4);
 
+} 
+.card_img_big {
+  height:220px;
 }
 
 .card_small img {
@@ -189,13 +192,26 @@ nav_cta {
   cursor: pointer;
 }
 
+.line_clamp_5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.line_clamp_2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width:100%;
+  
+}
 
 
 
 .card p {
   /**this truncates the text after 4 lines, change in the line clamp property**/
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   width: 100%;
   overflow: hidden;
@@ -225,7 +241,7 @@ nav_cta {
 
 
 .category {
-  color: var(--primary_d);
+ 
   background-color: var(--background_l);
   width: fit-content;
   text-transform: uppercase;
@@ -236,10 +252,15 @@ nav_cta {
   margin: 4px 2px;
   padding: 4px 1em;
 }
+.category_dark {
+  color: var(--text_d);
+}
 
 .category:hover {
   border: 1px solid var(--primary_l);
-  background-color: var(--primary_l);
+  background-color: var(--primary_ll);
+  
+ 
 }
 
 .category_selected {
@@ -256,6 +277,7 @@ nav_cta {
   line-height: 2.5em;
   padding: 0 8px;
   box-shadow: 1px 1px 0.8em 1px #11111140;
+  font-size: 0.7rem;
 }
 
 .card_small .category_chip {
@@ -287,6 +309,9 @@ nav_cta {
   display: inline-block;
   font-weight: 500;
   font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   /** font-family: 'Varela Round', sans-serif;**/
 }
 
@@ -302,6 +327,9 @@ nav_cta {
   font-weight: 500;
   font-size: 0.9rem;
   text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   /**font-family: 'Varela Round', sans-serif;**/
 
 }
@@ -370,16 +398,16 @@ img+i {
   background-color: #00000005;
 }
 
-.card_img_overlay {
+.card_img_overlay_n {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   width: 100%;
-  justify-content: space-between;
+  justify-content: end;
+  align-items: center;
   padding: 0 8px;
   position: absolute;
-  top: 2%;
-  right: 1px;
-  color: white;
+  top: 0.5%;
+  color: white !important;
 }
 
 
@@ -387,6 +415,7 @@ img+i {
   display: flex;
   flex-direction: row;
   width: 100%;
+  align-items:baseline;
   justify-content: space-between;
   padding: 0 8px;
   position: absolute;
@@ -399,7 +428,7 @@ img+i {
 
 
 
-.read_time {
+.read_time_n {
   font-family: 'Varela Round', sans-serif;
   font-size: 0.8rem;
 }
@@ -407,9 +436,11 @@ img+i {
 i+span {
   /**comments**/
   font-family: 'Varela Round', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
-
+ .comments {
+  font-size: 0.8rem;
+ }
 /**reading list**/
 
 .reading_list .form-control {
@@ -563,65 +594,72 @@ td .btn-light {
 }
 
 
-/**my lists
 
-td:hover {
-  background-color: #cc9000;
-}
-tbody:hover + .btn-light {
-  display: block;
-  border: 1px solid var(--border);
-  background-color: transparent;
-    color: var(--primary);
-  
-  }
 
-.accordeon_enveep {
-  
-  color: var(--text_d);
-  background-color: var(--background_l);
-  border: var(--border);
-  font-family: 'Varela Round', sans-serif;
-
-}
 
 
 .accordion {
   background-color: var(--background_l);
   color: var(--text_d);
    font-family: 'Varela Round', sans-serif;
-font-size: 1.4rem;
+font-size: 1.1rem;
     cursor: pointer;
-  padding:0.5em 1em;
+  padding:0.5em 0.5em;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
   transition: 0.4s;
+  border: var(--border_p_s);
 }
 
 .active, .accordion:hover {
   background-color: var(--primary_ll); 
-  color: var(--primary_d);
+  
   }
 
 .panel {
-  padding: 0.2em 1em;
+  padding: 0.5em;
   display: none;
   background-color: white;
   overflow: hidden;
+  
  
 }
-.td {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: var(--text_d);
-  font-family: 'Noto Serif', serif;
+
+.list_card {
+  padding: 0.4em 2px;
+  
+  width:100%;
+ height:fit-content;
+  display: flex;
+  flex-direction: column;
+ justify-content: space-between;
+  margin: 0;
+
+  cursor:pointer;
+  
+}
+
+
+
+.list_card a{
+
  
-
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1rem;
+    border-radius: .375rem;
+    text-decoration: none;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    overflow: hidden;
+   line-height: 120%;
+  }
+  
+  .list_card a:hover {
+color:var(--primary_d);
+  }
 }
-th {
 
-}
-**/

@@ -10,6 +10,10 @@
   --background_d: #f6f6f6;
   --background_p: #F6F4EE;
   --background_l: white;
+  --border_p_s: 0.01em solid var(--primary_ll);
+  --border_p_m: 0.1em solid var(--primary_ll);
+  --border_d: 0.01em solid var(--primary_d);
+  --border_l: 0.01em solid var(--background_p);
 
 }
 
@@ -22,7 +26,7 @@ a,
 .form-select,
 option {
   font-family: 'Varela Round', sans-serif;
-  color: var(--text_d);
+  color: var(--text_d) ;
 }
 
 
@@ -30,9 +34,9 @@ option {
 
 
 .nav_cta {
-  border-color: none;
+  border-color: var(--primary_ll);
   color: var(--text_d);
-  background-color: var(--primary_ll);
+  background-color: var(--primary_l);
   width: 8em;
   height: 40px;
   font-size: 18px;
@@ -42,8 +46,9 @@ option {
 .nav_cta:hover {
   background-color: var(--background_l);
   border-color: var(--background_l);
+  color:var(--text_d) !important;
   font-weight: 500;
-  box-shadow: 1px 1px 0.8em #11111126
+  box-shadow: 1px 1px 0.8em #11111126;
 }
 
 .navbar input {
@@ -52,15 +57,19 @@ option {
 }
 
 .navbar a:hover {
-  color: var(--background_l) !important;
+  color: var(--primary_ll);
 }
+
+
 
 .navbar .dropdown-item {
   color: var(--text_d);
+  text-transform: capitalize;
 }
 
 .navbar .dropdown-item:hover {
-  background-color: var(--background_p);
+  background-color: var(--primary_ll);
+  color: var(--text_d);
 }
 
 .navbar .dropdown-menu {
